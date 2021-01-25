@@ -1,13 +1,22 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from "react";
+import { Route, Switch } from "react-router-dom";
 
-import HomePage from './pages/homepage/homepage.component';
+import "./App.css";
+
+import HomePage from "./pages/homepage/homepage.component";
 
 function App() {
   return (
-    <div >
-      <HomePage />
-    </div>
+    <Fragment>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/hats" component={HomePage} />
+        <Route exact path="/jackets" component={HomePage} />
+        <Route exact path="/sneakers" component={HomePage} />
+        <Route exact path="/womens" component={HomePage} />
+        <Route exact path="/mens" component={HomePage} />
+      </Switch>
+    </Fragment>
   );
 }
 
