@@ -1,0 +1,18 @@
+adding new functions:
+
+first add redux level types
+then redux level actions
+then redux level reducer
+
+then integrate into component from actions level
+
+
+>>>
+
+selector is for memoizing items using 'reselector' and properly
+integrating in mapStateToProps functions
+
+the utilities is used when an object needs to be split in such
+a way that it can be converted into a function that can be 
+returned in the reducer, rather than filling the reducer with
+such functions
