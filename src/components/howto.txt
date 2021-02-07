@@ -9,8 +9,17 @@ then integrate into component from actions level
 
 >>>
 
-selector is for memoizing items using 'reselector' and properly
+selector is for memoizing items using 'reselect' and properly
 integrating in mapStateToProps functions
+
+import { createSelector } from 'reselect';
+
+const selectShop = state => state.shop;
+
+export const selectShopItems = createSelector(
+    [selectShop],
+    shop => shop.shopItems
+)
 
 the utilities is used when an object needs to be split in such
 a way that it can be converted into a function that can be 

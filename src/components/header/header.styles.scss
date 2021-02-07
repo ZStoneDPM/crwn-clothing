@@ -4,6 +4,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+    /* width: 85vw; */
+    padding-right: 18%;
+    /* margin-right: 38%; */
+    right: 0px;
+    left: 0px;
+    box-sizing: content-box;
   
     .logo-container {
       height: 100%;
